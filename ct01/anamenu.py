@@ -1,6 +1,7 @@
 import hesaplar.hesapmakinesi
 import nothesabi.nothesaplayici
 import cizimler.cizim
+import burcogrenme.burc
 
 def ANAMENU():
     print("╔═════════════════════╗")
@@ -10,6 +11,7 @@ def ANAMENU():
     print("║  2-KM HESAP         ║")
     print("║  3-Cizim            ║")
     print("║  4-Not hesabı       ║")
+    print("║  5-Burc Ogrenme     ║")
     print("║  ç-çıkış            ║")
     print("║                     ║")
     print("║    Seçimiz nedir?   ║")
@@ -24,8 +26,11 @@ def ANAMENU():
     if seçim == "4":
         nothesabi.nothesaplayici.harfnotu()
         ANAMENU()
+    if seçim == "5" :
+        burcogrenme.burc.burcmenu()
+        ANAMENU()
     else: 
-        print("Seçim sadece 1,2,4,ç olabilir.")
+        print("Seçim sadece 1,2,4,5,ç olabilir.")
         ANAMENU()
 
 ANAMENU()
