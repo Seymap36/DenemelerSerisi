@@ -1,3 +1,6 @@
 {
-    "java.configuration.runtimes": []
+    "java.configuration.runtimes": [],
+    "python.analysis.extraPaths": [
+        "./ct01"
+    ]
 }

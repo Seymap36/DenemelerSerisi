@@ -1,4 +1,4 @@
-import hesapmak.hm
+import hesaplar.hesapmakinesi
 import nothesabi.nothesaplayici
 import cizimler.cizim
 
@@ -16,8 +16,7 @@ def ANAMENU():
     print("╚═════════════════════╝")
     seçim = input()
     if seçim == "1" :
-        hesapmak.hm.hmmenu()
-        ANAMENU()
+        hesaplar.hesapmakinesi.hmmenu()
     if seçim == "3" :
         cizimler.cizim.cizimlermenu()
         ANAMENU()
